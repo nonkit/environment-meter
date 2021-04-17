@@ -10,7 +10,7 @@ input.onButtonPressed(Button.AB, function () {
     basic.showNumber(hu)
 })
 function sendParam () {
-    radio.sendString("" + ([co2, temp, hu]))
+    radio.sendString("" + co2 + "," + temp + "," + hu)
 }
 input.onButtonPressed(Button.B, function () {
     readTemp()
